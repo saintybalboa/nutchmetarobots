@@ -4,7 +4,7 @@
    id="metarobots"
    name="Read meta robots tag and perform various tasks"
    version="1.0.0"
-   provider-name="saintybalboa">
+   provider-name="saintybalboa.nutch.metarobots">
 
    <runtime>
       <library name="metarobots.jar">
@@ -17,11 +17,11 @@
    </requires>
 
 
-    <extension id="saintybalboa.nutch.meta.MetaRobotsIndexer"
+    <extension id="saintybalboa.nutch.metarobots.MetaRobotsIndexer"
               name="Meta Robots Indexer"
               point="org.apache.nutch.indexer.IndexingFilter">
       <implementation id="MetaRobotIndexer"
-                      class="saintybalboa.nutch.meta.MetaRobotsIndexer"/>
+                      class="saintybalboa.nutch.metarobots.MetaRobotsIndexer"/>
    </extension>
    
 </plugin>
