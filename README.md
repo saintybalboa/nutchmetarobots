@@ -3,6 +3,8 @@ A plugin developed for Apache Nutch 2.3 to honour the robots meta tag at index t
 
 ##Usage
 
+Include the ``metarobots`` plugin first in the ``plugin.includes`` property.
+
 ```
 <property>
     <name>plugin.includes</name>
@@ -44,3 +46,15 @@ Follow these steps to ensure your plugin gets built into the runtime folder:
    ```ant runtime```
    
 
+
+
+
+##Running Tests
+To test the plugin, open a terminal and navigate to the ``NUTCH_ROOT/runtime/local`` directory. 
+
+Run the following command:
+
+```
+ sudo bin/nutch indexchecker http://domain.com/metatag-robots-noindex-rule
+```
+Ensure the webpage under test contains the robots metatag with the associated ``noindex`` rule. Nutch will return ``Document discarded`` in the terminal.
