@@ -1,6 +1,8 @@
 # Apache Nutch 2.3 - Meta Robots - Plugin
 A plugin developed for Apache Nutch 2.3 to honour the robots meta tag at index time. Apache Nutch 2.3 currenlty ignores the ``noindex`` rule and proceeds to index the content to Solr. This plugin has been developed to discard the document from index if it contains the robots metatag with the associated ``noindex`` rule.
 
+>**Please note:** This plugin does NOT remove any documents from your external datastore for index. You'll need to remove any documents previously indexed from your external datastore.
+
 ##Usage
 
 Include the ``metarobots`` plugin first in the ``plugin.includes`` property.
