@@ -12,6 +12,11 @@ Include the ``metarobots`` plugin first in the ``plugin.includes`` property.
     <name>plugin.includes</name>
     <value>metarobots|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)|protocol-(http|https)|urlfilter-regex|parse-(html|metatags|tika)|index-(basic|metadata|more)</value>
 </property>
+
+<property>
+     <name>index.metadata</name>
+     <value>robots</value>
+</property>
 ```
 
 ##How To Build
