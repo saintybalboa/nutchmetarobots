@@ -5,7 +5,7 @@ A plugin developed for Apache Nutch 2.3 to honour the robots meta tag at index t
 
 ##Usage
 
-Include the ``metarobots`` plugin first in the ``plugin.includes`` property.
+Include the ``metarobots`` plugin first in the ``plugin.includes`` property and specify ``robots`` in the ``index.metadata`` property.
 
 ```
 <property>
